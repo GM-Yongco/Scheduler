@@ -1,0 +1,14 @@
+the schedule is split into 30 minute chunks
+-  mostly for similarity to the USC schedules
+the unit will be called 't' for brevity
+
+this is mainly for school and university
+- so we limit it to a time range between 7:30 to 21:30
+- we also exclude sunday
+
+there is 9t between 7:30 to 12:00
+9t between 12:00 to 16:30
+10t beween 16:30 to 21:30
+
+28t all in all in one day
+168t for Monday to Saturnday
