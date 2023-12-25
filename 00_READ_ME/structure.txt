@@ -25,90 +25,144 @@ there is 9t between 7:30 to 12:00
 we will be using json to store the subect
 note: the free elec thingy is an annoying edge case *angry sad emoji*
 
+the "considered" variable is so that you can 
+take the subject into account or ignore it in the itteration 
+without needing to delete it from the json
+
 {
-	"Subject" : "DSA",
-	"Variants" : [
+	"subjects" : [
 		{
-			"Subject": "DSA" 
-			"Professor": "Pena"
-			"Schedule": [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+			"subject_title" : "DSA",
+			"variants" : [
+				{
+					"professor": "Pena"
+					"schedule": [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Lim"
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Pena"
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				},
+				{
+					"professor": "Lim"
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				}
+			]
+			"considered" : "true"
 		},
 		{
-			"Subject": "DSA" 
-			"Professor": "Lim"
-			"Schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
-		},
-		{
-			"Subject": "DSA" 
-			"Professor": "Pena"
-			"Schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
-		},
-		{
-			"Subject": "DSA" 
-			"Professor": "Lim"
-			"Schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
-		},
+			"subject_title" : "FREE ELEC",
+			"variants" : [
+				{
+					"professor": "Pena - EUREKA"
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Lim - SWIMMING"
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Pena - REACH FOR THE STARS"
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				},
+				{
+					"professor": "Lim - TALK ABOUT FEELINGS"
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				}
+			]
+			"considered" : "true" 
+		}
 	]
-},
+}
+
+
+
+# ========================================================================
+# WHOLE SCHED
+# ========================================================================
+note: will basically be an array of variants
 {
-	"Subject" : "FREE ELEC",
-	"Variants" : [
+	"variants" :	[
 		{
-			"Subject": "EUREKA" 
-			"Professor": "Pena"
-			"Schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+			"Subject": "2102 - WEB" 
+			"professor": ""
+			"schedule" : [1, 2, 3, 4, 57, 58, 59, 60, 61, 62]
 		},
 		{
-			"Subject": "SWIMMING" 
-			"Professor": "Lim"
-			"Schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+			"Subject": "2104 - IM" 
+			"professor": ""
+			"schedule" : [7, 8, 9, 10, 11, 12, 65, 66, 67, 68]
 		},
 		{
-			"Subject": "REACH FOR THE STARS" 
-			"Professor": "Pena"
-			"Schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+			"Subject": "EDM" 
+			"professor": ""
+			"schedule" : [19, 20, 75, 76, 131, 132]
 		},
 		{
-			"Subject": "TALK ABOUT FEELINGS" 
-			"Professor": "Lim"
-			"Schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+			"Subject": "2101 - DSA" 
+			"professor": ""
+			"schedule" : [29, 30, 31, 32, 33, 34, 85, 86, 87, 88]
+		},
+		{
+			"Subject": "2103 - OOP" 
+			"professor": ""
+			"schedule" : [35, 36, 91, 92, 113, 114, 115, 116, 117, 118]
+		},
+		{
+			"Subject": "2105 - NET" 
+			"professor": ""
+			"schedule" : [12, 13, 14, 15, 16, 17]
+		},
+		{
+			"Subject": "GE-FEL ESUR" 
+			"professor": ""
+			"schedule" : [72, 73, 74, 128, 129, 130]
+		},
+		{
+			"Subject": "2106 - CHS" 
+			"professor": ""
+			"schedule" : [125, 126]
 		},
 	]
 }
 
 # ========================================================================
-# WHOLE SCHED
-# ========================================================================
+
+ORRRR
+just an array of 128 with the subject and professor
+which I think will be vHassul cuz so much repeating data
+like, every time block will have a copy of the same subject and professor
+so lets not
+
 [
-	{
-		"Subject": "2102 - WEB" 
-		"Professor": ""
-		"Schedule" : [1, 2, 3, 4, 57, 58, 59, 60, 61, 62]
-	},
-	{
-		"Subject": "2104 - IM" 
-		"Professor": ""
-		"Schedule" : [7, 8, 9, 10, 11, 12, 65, 66, 67, 68]
-	},
-	{
-		"Subject": "EDM" 
-		"Professor": ""
-		"Schedule" : [19, 20, 75, 76]
-	},
-	{
-		"Subject": "2101 - DSA" 
-		"Professor": ""
-		"Schedule" : [29, 30, 31, 32, 33, 34, 85, 86, 87, 88]
-	},
-	{
-		"Subject": "2103 - OOP" 
-		"Professor": ""
-		"Schedule" : [35, 36, 91, 92, 113, 114, 115, 116, 117, 118]
-	},
-	{
-		"Subject": "2105 - NET" 
-		"Professor": ""
-		"Schedule" : [12, 13, 14, 15, 16, 17]
-	},
+
 ]
 
+# ========================================================================
+
+or we can just represent them as an array, with size of "subjects", storing the index of the "variant"
+this idea may be useful for the itterating part
+but I believe the displaying part would need something more adequate 
+unless it also has access to the "subjects" which it probably has
+
+
+
+{
+	"schedules" : [
+		{	
+			"variant_indexes" : [1, 2, 5, 2, 1, 8, 9] 
+		},
+		{	
+			"variant_indexes" : [6, 8, 3, 1, 5, 7, 2]
+		},
+		{	
+			"variant_indexes" : [9, 2, 4, 8, 6, 1, 7]
+		},
+		{	
+			"variant_indexes" : [5, 2, 8, 4, 7, 1, 6]
+		},
+	]
+}

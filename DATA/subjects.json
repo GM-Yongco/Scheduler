@@ -1,0 +1,48 @@
+{
+	"subjects" : [
+		{
+			"subject_title" : "DSA",
+			"variants" : [
+				{
+					"professor": "Pena",
+					"schedule": [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Lim",
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Pena",
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				},
+				{
+					"professor": "Lim",
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				}
+			],
+			"considered" : "true"
+		},
+		{
+			"subject_title" : "FREE ELEC",
+			"variants" : [
+				{
+					"professor": "Pena - EUREKA",
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Lim - SWIMMING",
+					"schedule" : [1, 2, 3, 4, 5, 6, 57, 58, 59, 60]
+				},
+				{
+					"professor": "Pena - REACH FOR THE STARS",
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				},
+				{
+					"professor": "Lim - TALK ABOUT FEELINGS",
+					"schedule" : [7, 8, 9, 10, 11, 12, 63, 64, 65, 66]
+				}
+			],
+			"considered" : "true" 
+		}
+	]
+}
